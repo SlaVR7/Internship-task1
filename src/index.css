@@ -1,0 +1,104 @@
+#root {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('./assets/images/nature.jpg') center/cover no-repeat;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  height: 50px;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+}
+
+.header__nav {
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header__nav_item {
+  font-size: 20px;
+}
+
+.title {
+  text-align: center;
+}
+
+.main-page__description {
+  text-align: center;
+}
+
+.my-button {
+  font-size: 22px;
+  line-height: 1.5;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 150ms;
+}
+
+.my-button:active {
+  transform: scale(90%);
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.date {
+  margin: 0;
+  font-size: 48px;
+  color: darkred;
+}
+
+.timer-description {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.date-input {
+  font-size: 18px;
+}
+
+.date-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
