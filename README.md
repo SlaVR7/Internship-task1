@@ -9,4 +9,4 @@ To run this project locally, follow these steps:
 
 ## Deploy
 
-
+https://internship-task1-3z9dr4pew-mylife0793-gmailcom.vercel.app/
