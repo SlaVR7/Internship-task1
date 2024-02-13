@@ -1,5 +1,5 @@
-import React, {useState, useEffect, useRef} from 'react';
-import {Button} from "../components/Button.tsx";
+import React, { useState, useEffect, useRef } from 'react';
+import { Button } from '../components/Button.tsx';
 
 export function DatePage() {
   const [date, setDate] = useState(new Date());
@@ -10,8 +10,8 @@ export function DatePage() {
   useEffect(() => {
     intervalRef.current = isTimerActive
       ? setInterval(() => {
-        setDate(new Date());
-      }, 1000)
+          setDate(new Date());
+        }, 1000)
       : undefined;
 
     return () => clearInterval(intervalRef.current);
@@ -32,10 +32,6 @@ export function DatePage() {
     setDate(newDate);
   };
 
-  const handleResetButton = () => {
-    setIsTimerActive(true)
-  };
-
   return (
     <div className="page-container">
       <h1>Date page</h1>
@@ -49,11 +45,9 @@ export function DatePage() {
           onChange={handleDateChange}
           type="date"
         />
-        <Button onClick={handlePushButton} text="Push it"/>
-        <Button onClick={handleResetButton} text="Reset"/>
+        <Button onClick={handlePushButton} text="Push it" />
+        <Button onClick={() => setIsTimerActive(true)} text="Reset" />
       </div>
     </div>
   );
 }
-
-

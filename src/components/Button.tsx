@@ -1,6 +1,6 @@
-import {ButtonProps} from '../lib/interfaces.ts';
-import {CSSProperties, useState} from "react";
-import {getRandomColor} from "../utils/getRandomColor.ts";
+import { ButtonProps } from '../lib/interfaces.ts';
+import { CSSProperties, useState } from 'react';
+import { getRandomColor } from '../utils/getRandomColor.ts';
 
 export function Button({
   text,
@@ -11,9 +11,9 @@ export function Button({
 }: ButtonProps) {
   const [colorStyles, setColorStyles] = useState<CSSProperties | undefined>(undefined);
   const handleClick = () => {
-    setColorStyles({backgroundColor: getRandomColor(), color: getRandomColor()});
+    setColorStyles({ backgroundColor: getRandomColor(), color: getRandomColor() });
     onClick && onClick();
-  }
+  };
 
   return (
     <button
