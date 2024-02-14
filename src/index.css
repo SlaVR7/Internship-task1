@@ -62,6 +62,7 @@ main {
 
 footer {
   margin: 10px;
+  padding: 0 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -136,6 +137,7 @@ footer {
 }
 
 .page__description {
+  padding: 0 10px;
   text-align: center;
   font-size: 18px;
   font-weight: bold;
@@ -171,11 +173,6 @@ footer {
   margin: 0;
   font-size: 48px;
   color: darkred;
-}
-
-.timer-description {
-  font-size: 18px;
-  font-weight: bold;
 }
 
 .date-input {

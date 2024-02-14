@@ -37,7 +37,7 @@ export function DatePage() {
       <h1>Date page</h1>
       <p className="date">{date.toLocaleTimeString()}</p>
       <p className="date" role="dateOutput">{date.toLocaleDateString()}</p>
-      <p className="timer-description">Wanna change it? Set your date below and click "Push it"</p>
+      <p className="page__description">Wanna change it? Set your date below and click "Push it"</p>
       <div className="date-nav">
         <input
           role="dateInput"
