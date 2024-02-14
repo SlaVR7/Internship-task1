@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Button } from '../components/Button.tsx';
+import { Button } from '../components';
 
 export function DatePage() {
   const [date, setDate] = useState(new Date());
@@ -36,10 +36,11 @@ export function DatePage() {
     <div className="page-container">
       <h1>Date page</h1>
       <p className="date">{date.toLocaleTimeString()}</p>
-      <p className="date">{date.toLocaleDateString()}</p>
+      <p className="date" role="dateOutput">{date.toLocaleDateString()}</p>
       <p className="timer-description">Wanna change it? Set your date below and click "Push it"</p>
       <div className="date-nav">
         <input
+          role="dateInput"
           className="date-input"
           value={formatDate(inputValue)}
           onChange={handleDateChange}
