@@ -75,6 +75,7 @@ footer {
   display: flex;
   flex-direction: column;
   background: rgba(255, 255, 255, 0.7);
+  border: 1px solid black;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -89,7 +90,11 @@ footer {
 .header__nav_item {
   width: 25%;
   height: 100%;
-  border: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.header__nav_item:last-child {
   border-right: none;
 }
 
